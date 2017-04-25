@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+
+  "name": "EpiNews",
+  "description": "Epi can mean before. This provides things you should know before you read a news source. Such as the owner of the news source, etc.",
+  "version": "1.0",
+
+  "permissions": [
+    "activeTab",
+    "https://ajax.googleapis.com/"
+  ],
+  "content_scripts": [{
+    "js": ["content.js"],
+    "matches": ["https://news.google.com/*"]
+  }]
+
+}
